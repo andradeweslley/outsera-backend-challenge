@@ -1,9 +1,17 @@
 {
   "name": "outsera-backend-challenge",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "author": "Weslley Andrade <weslley.araujo2006@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .ts"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parser": "^3.2.0",
